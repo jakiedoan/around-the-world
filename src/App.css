@@ -1,3 +1,28 @@
+@font-face {
+  font-family: 'Roboto';
+  src: local('Lato'), url(./fonts/roboto/Roboto-Light.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 500;
+  src: local('Lato'), url(./fonts/roboto/Roboto-Medium.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  src: local('Lato'), url(./fonts/roboto/Roboto-Medium.ttf) format('opentype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 900;
+  src: local('Lato'), url(./fonts/roboto/Roboto-Black.ttf) format('opentype');
+}
+
+body{
+  font-family: Roboto, Arial, Serif !important;
+}
 .App {
   text-align: center;
 }

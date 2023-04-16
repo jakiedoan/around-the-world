@@ -1,0 +1,153 @@
+@import "src/scss/variables";
+
+.airports{
+  position: relative;
+  z-index: 2;
+  background-color: $bg-color;
+  overflow: hidden;
+  @media #{$info-phone} {
+    padding-bottom: 6vw;
+  }
+  .title-main{
+    margin: 62px 0 75px 0;
+    @media #{$info-tablet-horizontal} {
+      margin: 2.7vw 0 3.2vw 0;
+    }
+    @media #{$info-phone} {
+      margin: 20px 0 15px 0;
+    }
+  }
+  .box-image{
+    position: relative;
+    padding-bottom: 114px;
+    @media #{$info-tablet-horizontal} {
+      padding-bottom: 6.4vw;
+    }
+    .box-item{
+      width: 100%;
+      .plan-box{
+
+      }
+      span{
+        background-image:
+                linear-gradient(to right, #00F0FF,#FFED77,#00F0FF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: rainbow-animation 500s;
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: bold;
+        color: #00FFFF;
+        font-size: 1.2rem;
+        @media #{$info-tablet-1399} {
+          font-size: 19px;
+        }
+        .icon-plan{
+          margin: 0 10px;
+          color: #990000;
+        }
+      }
+      img{
+        width: 100%;
+        opacity: 0;
+        margin-bottom: 1.6rem;
+        @media #{$info-phone} {
+          margin-bottom: 0;
+        }
+        &.fade-in{
+          animation-name: fadeIn;
+          animation-timing-function: ease-in-out;
+          animation-duration: 3s;
+          @media #{$info-phone}{
+            animation-name: fadeInMobile;
+          }
+        }
+        &.fade-out{
+          animation-name: fadeOut;
+          animation-timing-function: ease-in-out;
+          animation-duration: 3s;
+          @media #{$info-phone}{
+            animation-name: fadeOutMobile;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeOut {
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  70%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: scale(0.7);
+  }
+}
+
+@keyframes fadeIn {
+  0%{
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  30%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOutMobile {
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  60%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  90%{
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  100%{
+    opacity: 0;
+    transform: scale(0.7);
+  }
+}
+
+@keyframes fadeInMobile {
+  0%{
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  10%{
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  40%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+@keyframes rainbow-animation {
+  to {
+    background-position: 4500vh;
+  }
+}

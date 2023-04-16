@@ -1,0 +1,101 @@
+@import "src/scss/variables";
+
+.key-features-item{
+  position: relative;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 426px;
+  height: 297px;
+  margin: 5px 0 5px 0;
+  @media #{$info-tablet-1399} {
+    width: 288px;
+    height: 213px;
+    margin: 10px 0 10px 0;
+  }
+  @media #{$info-tablet-horizontal} {
+    width: 288px;
+    height: 190px;
+    margin: 10px 0 10px 0;
+  }
+  @media #{$info-tablet-991}{
+    width: 220px;
+    height: 150px;
+  }
+  @media #{$info-phone} {
+    width: 100%;
+    height: 53vw;
+    transform: translateY(-10px);
+    margin: 0;
+  }
+
+  .box-title{
+    @media #{$info-phone} {
+      position: relative;
+      width: 80%;
+      top: 23%;
+      left: 10%;
+    }
+
+    .title-key{
+      position: relative;
+      width: 85%;
+      display: block;
+      color: $color-title-main;
+      font-size: 1.1rem;
+      line-height: 1.7rem;
+      @media #{$info-tablet-1399}{
+        line-height: 20px;
+        font-size: 12px;
+      }
+      @media #{$info-tablet-991}{
+        line-height: 16px;
+        font-size: 9px;
+      }
+      @media #{$info-phone}{
+        font-size: 0.72rem;
+      }
+      @media #{$info-phone-576} {
+        font-size: 0.6rem;
+      }
+      @media #{$info-nexus4}{
+        font-size: 0.5rem;
+      }
+      @media #{$info-phone-330} {
+        font-size: 0.4rem;
+        line-height: 0.7rem;
+      }
+    }
+
+    .title-main-key{
+      padding: 45px 0 0 35px;
+      width: 85%;
+      @media #{$info-tablet-1399} {
+        padding: 0;
+        margin: 38px 0 0 27px;
+      }
+      @media #{$info-tablet-horizontal} {
+        padding: 0;
+        margin: 25px 0 0 27px;
+      }
+      @media #{$info-tablet-991}{
+        padding: 0;
+        margin: 20px 0 0 22px;
+      }
+    }
+
+    .title{
+      color: #FFFFFF;
+      margin: 5px 0 0 38px;
+      @media #{$info-tablet-1399} {
+        margin: 5px 0 0 27px;
+      }
+      @media #{$info-tablet-horizontal}{
+        margin: 5px 0 0 30px;
+      }
+      @media #{$info-tablet-991}{
+        margin: 5px 0 0 22px;
+      }
+    }
+  }
+}

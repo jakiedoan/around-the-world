@@ -1,0 +1,310 @@
+@import "src/scss/variables";
+
+.introduce{
+  z-index: 2;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  min-height: 1068px;
+  height: 56.5vw;
+  max-height: 1900px;
+  @media #{$info-tablet-1399} {
+    min-height: 56.5vw;
+  }
+  @media #{$info-phone} {
+    height: 75vw;
+    min-height: inherit;
+  }
+  .container{
+    position: relative;
+    height: 100%;
+    .introduce-content{
+      position: absolute;
+      background-position: left;
+      background-size: cover;
+      background-repeat: no-repeat;
+      left: 5%;
+      top: 33%;
+      width: 820px;
+      height: 560px;
+      @media #{$info-tablet-1399} {
+        top: 25%;
+        width: 550px;
+        height: 380px;
+      }
+      @media #{$info-tablet-horizontal} {
+        width: 492px;
+        height: 322px;
+      }
+      @media #{$info-tablet-991} {
+        top: 18%;
+      }
+      @media #{$info-phone} {
+        background-size: cover;
+        top: 15%;
+        left: 5px;
+        right: 5px;
+        width: calc(100% - 10px);
+        height: 345px;
+      }
+      @media #{$info-phone-576} {
+        left: 0;
+        background-size: cover;
+        top: 20px;
+        height: 87%;
+      }
+      .introduce-text{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-48%, -50%);
+        width: 660px;
+        display: block;
+        color: #FFFFFF;
+        font-weight: inherit;
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+        @media #{$info-tablet-1399} {
+          line-height: inherit;
+          width: 460px;
+          font-size: 14px;
+        }
+        @media #{$info-tablet-horizontal} {
+          line-height: inherit;
+          width: 80%;
+          font-size: 12px;
+        }
+        @media #{$info-phone} {
+          transform: translate(-50%, 0);
+          top: 16%;
+          left: 50%;
+          width: 80%;
+          font-size: 0.72rem;
+          height: fit-content;
+        }
+        @media #{$info-phone-576} {
+          font-size: 0.6rem;
+          line-height: 1rem;
+        }
+        @media #{$info-nexus4} {
+          left: 51%;
+          width: 85%;
+          font-size: 0.5rem;
+          line-height: 0.78rem;
+        }
+        @media #{$info-phone-330} {
+          left: 51%;
+          width: 85%;
+          font-size: 0.4rem;
+          line-height: 0.7rem;
+        }
+        &-main{
+          font-size: 1.7rem;
+          font-weight: 600;
+          @media #{$info-tablet-horizontal} {
+            font-size: 25px;
+          }
+          @media #{$info-tablet-horizontal} {
+            font-size: 2.3vw;
+          }
+        }
+      }
+
+      .introduce-light{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #fff;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        position: absolute;
+        @media #{$info-tablet-1399} {
+          width: 10px;
+          height: 10px;
+        }
+        &::after{
+          content: "";
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          z-index: 1;
+          border-radius: 50%;
+          box-shadow: 0 0 5px 5px #A2FEFF ;
+          background-color: #fff;
+          @media #{$info-tablet-horizontal} {
+            width: 10px;
+            height: 10px;
+          }
+        }
+        &.introduce-light-1{
+          box-shadow: 0 0 35px 17.5px #766eff;
+          animation-name: light1;
+          top: 27px;
+          left: 78.5%;
+          z-index: 1;
+          @media #{$info-tablet-1399} {
+            top: 15px;
+            left: 79.5%;
+          }
+          @media #{$info-tablet-horizontal} {
+            animation-name: light1-tablet-horizontal;
+            box-shadow: 0 0 20px 10px #766EFF;
+            top: 10px;
+            left: 79.5%;
+          }
+          @media #{$info-phone} {
+            top: 9px;
+          }
+          @media #{$info-phone-576} {
+            top: 7px;
+          }
+        }
+
+        &.introduce-light-2{
+          box-shadow: 0 0 35px 17.5px #fff1bb;
+          animation-name:light2;
+          top: 48%;
+          left: 32px;
+          @media #{$info-tablet-1399} {
+            top: 48%;
+            left: 19px;
+          }
+          @media #{$info-tablet-horizontal} {
+            animation-name: light2-tablet-horizontal;
+            box-shadow: 0 0 20px 10px #fff1bb;
+            top: 48%;
+            left: 18.5px;
+          }
+          @media #{$info-phone} {
+            left: 20.5px;
+          }
+          @media #{$info-phone-576} {
+            left: 3.7vw;
+          }
+        }
+
+        &.introduce-light-3{
+          //animation-delay: 3s;
+          box-shadow: 0 0 35px 17.5px #ffa6a6;
+          animation-name: light3;
+          bottom: 28px;
+          left: 54.2%;
+          @media #{$info-tablet-1399} {
+            bottom: 22px;
+            left: 54.2%;
+          }
+          @media #{$info-tablet-horizontal} {
+            animation-name: light3-tablet-horizontal;
+            box-shadow: 0 0 20px 10px #ffa6a6;
+            bottom: 9px;
+            left: 53.2%;
+          }
+          @media #{$info-phone-576} {
+            bottom: 2.5vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes light1{
+  0%{
+    box-shadow: 0 0 20px 10px #766EFF;
+  }
+  16.6%{
+    box-shadow: 0 0 80px 40px #766EFF;
+  }
+  33.3%{
+    box-shadow: 0 0 20px 10px #766EFF;
+  }
+  100% {
+    box-shadow: 0 0 20px 10px #766EFF;
+  }
+}
+
+@keyframes light2{
+  0%{
+    box-shadow: 0 0 20px 10px #fff1bb;
+  }
+  33.3%{
+    box-shadow: 0 0 20px 10px #fff1bb;
+  }
+  49.9%{
+    box-shadow: 0 0 80px 40px #fff1bb;
+  }
+  66.6%{
+    box-shadow: 0 0 20px 10px #fff1bb;
+  }
+  100% {
+    box-shadow: 0 0 20px 10px #fff1bb;
+  }
+}
+
+@keyframes light3{
+  0%{
+    box-shadow: 0 0 20px 10px #ffa6a6;
+  }
+  66.6% {
+    box-shadow: 0 0 20px 10px #ffa6a6;
+  }
+  83.6%{
+    box-shadow: 0 0 90px 45px #ffa6a6;
+  }
+  100%{
+    box-shadow: 0 0 20px 10px #ffa6a6;
+  }
+}
+
+@keyframes light1-tablet-horizontal{
+  0%{
+    box-shadow: 0 0 20px 10px #766EFF;
+  }
+  16.6%{
+    box-shadow: 0 0 50px 25px #766EFF;
+  }
+  33.3%{
+    box-shadow: 0 0 20px 10px #766EFF;
+  }
+  100% {
+    box-shadow: 0 0 20px 10px #766EFF;
+  }
+}
+
+@keyframes light2-tablet-horizontal{
+  0%{
+    box-shadow: 0 0 20px 10px #fff1bb;
+  }
+  33.3%{
+    box-shadow: 0 0 20px 10px #fff1bb;
+  }
+  49.9%{
+    box-shadow: 0 0 50px 25px #fff1bb;
+  }
+  66.6%{
+    box-shadow: 0 0 20px 10px #fff1bb;
+  }
+  100% {
+    box-shadow: 0 0 20px 10px #fff1bb;
+  }
+}
+
+@keyframes light3-tablet-horizontal{
+  0%{
+    box-shadow: 0 0 20px 10px #ffa6a6;
+  }
+  66.6%{
+    box-shadow: 0 0 20px 10px #ffa6a6;
+  }
+  83.6%{
+    box-shadow: 0 0 50px 25px #ffa6a6;
+  }
+  100% {
+    box-shadow: 0 0 20px 10px #ffa6a6;
+  }
+}

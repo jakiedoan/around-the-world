@@ -1,0 +1,524 @@
+@import "src/scss/variables";
+
+.road-map{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  .title-main{
+    margin: 110px 0 0 0;
+    @media #{$info-tablet-1399} {
+      margin: 5.5vw 0 0 0;
+    }
+    @media #{$info-phone} {
+      margin: 55px 0 30px 0;
+    }
+  }
+  .rm-box{
+    display: flex;
+    flex-direction: row;
+    .year{
+      width: 50px;
+      color: #00FFFF;
+      position: relative;
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 0 25px 10px 10px;
+      font-size: 1.4rem;
+    }
+    &.rm-box1{
+      position: relative;
+      .rm1{
+        margin-top: 240px;
+        @media #{$info-tablet-1399} {
+          margin-top: 190px;
+        }
+        @media #{$info-tablet-horizontal} {
+          margin-top: 131px;
+        }
+      }
+      .text-rm1-1{
+        left: 21%;
+        top: 0px;
+        height: 247px;
+        display: flex;
+        align-items: flex-end;
+        @media #{$info-tablet-1399} {
+          height: 14vw;
+        }
+        @media #{$info-tablet-horizontal} {
+          left: 20%;
+          height: 145px;
+          top: 0;
+        }
+      }
+      .text-rm1-2{
+        left: 55%;
+        top: 56px;
+        @media #{$info-tablet-1399} {
+          top: 66px;
+        }
+        @media #{$info-tablet-horizontal} {
+          left: 54%;
+          top: 25px;
+        }
+      }
+    }
+
+    &.rm-box2{
+      position: relative;
+      .rm2{
+        margin-top: 299px;
+        @media #{$info-tablet-1399} {
+          margin-top: 220px;
+          font-size: 12px;
+        }
+        @media #{$info-tablet-horizontal} {
+          margin-top: 180px;
+        }
+      }
+      .text-rm2-1{
+        left: 1.5vw;
+        top: 56px;
+        @media #{$info-tablet-horizontal} {
+          top: 42px;
+          left: 5vw;
+        }
+      }
+      .text-rm2-2{
+        left: 54%;
+        top: 108px;
+        @media #{$info-tablet-1399} {
+          top: 94px;
+          font-size: 12px;
+        }
+        @media #{$info-tablet-horizontal} {
+          top: 54px;
+        }
+      }
+    }
+
+    &.rm-box3{
+      position: relative;
+      .rm3{
+        margin-top: 137px;
+        width: 28%;
+        @media #{$info-tablet-1399} {
+          margin-top: 115px;
+          font-size: 12px;
+        }
+        @media only screen and (max-width : 1199.5px){
+          width: 27.1%;
+        }
+        @media #{$info-tablet-horizontal} {
+          margin-top: 95px;
+          width: 27%;
+        }
+        @media #{$info-tablet-991} {
+          width: 26.5%;
+        }
+        @media #{$info-phone} {
+          width: 22%;
+        }
+      }
+      .text-rm3-1{
+        left: 13%;
+        top: 41px;
+        @media #{$info-tablet-1399} {
+          font-size: 12px;
+        }
+        @media #{$info-tablet-horizontal} {
+          top: 34px;
+        }
+      }
+    }
+
+    .text-rm{
+      color: #00E0FF;
+      position: absolute;
+      font-size: 1.2rem;
+      @media #{$info-tablet-1399} {
+        font-size: 12px;
+      }
+      @media #{$info-tablet-horizontal} {
+        font-size: 11px;
+      }
+    }
+  }
+
+  img{
+    width:calc(100% - 85px);
+  }
+  /* start icon now month */
+  .icon-now-month{
+    font-size: 20px;
+    color: #ff0000;
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    animation-name: icon-now, rotateIcon;
+    animation-duration: 1.5s ;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    @media #{$info-tablet-1399} {
+      animation-name: icon-now-1399;
+    }
+    @media only screen and (max-width : 1199.5px){
+      animation-name: icon-now-1200;
+    }
+    @media #{$info-tablet-991}{
+      font-size: 14px;
+      animation-name: icon-now-991;
+    }
+
+    &.month-01{
+      right: 90.7%;
+      @media #{$info-tablet-1399} {
+        right: 89.9%;
+      }
+      @media only screen and (max-width : 1199.5px){
+        right: 88%;
+      }
+      @media #{$info-tablet-991}{
+        right: 85%;
+      }
+    }
+    &.month-02{
+      right: 82.6%;
+      @media #{$info-tablet-1399} {
+        right: 81.5%;
+      }
+      @media only screen and (max-width : 1199.5px){
+        right: 80%;
+      }
+      @media #{$info-tablet-991}{
+        right: 77.5%;
+      }
+    }
+    &.month-03{
+      right: 74.5%;
+      @media #{$info-tablet-1399} {
+        right: 73.5%;
+      }
+      @media only screen and (max-width : 1199.5px){
+        right: 72.2%;
+      }
+      @media #{$info-tablet-991}{
+        right: 69.7%;
+      }
+    }
+    &.month-04{
+      right: 66.35%;
+      @media #{$info-tablet-1399} {
+        right: 65.5%;
+      }
+      @media only screen and (max-width : 1199.5px){
+        right: 64.3%;
+      }
+      @media #{$info-tablet-991}{
+        right: 62%;
+      }
+    }
+    &.month-05{
+      right: 58.2%;
+      @media #{$info-tablet-1399} {
+        right: 57.4%;
+      }
+      @media only screen and (max-width : 1199.5px){
+        right: 56.3%;
+      }
+      @media #{$info-tablet-991}{
+        right: 54.5%;
+      }
+    }
+    &.month-06{
+      right: 50%;
+      @media #{$info-tablet-1399} {
+        right: 49.4%;
+      }
+      @media only screen and (max-width : 1199.5px){
+        right: 48.3%;
+      }
+      @media #{$info-tablet-991}{
+        right: 46.7%;
+      }
+    }
+    &.month-07{
+      right: 41.5%;
+      @media #{$info-tablet-1399} {
+        right: 41%;
+      }
+      @media only screen and (max-width : 1199.5px){
+        right: 40.3%;
+      }
+      @media #{$info-tablet-991}{
+        right: 38.7%;
+      }
+    }
+    &.month-08{
+      right: 33.6%;
+      @media #{$info-tablet-1399} {
+        right: 33%;
+      }
+      @media only screen and (max-width : 1199.5px){
+        right: 32.5%;
+      }
+      @media #{$info-tablet-991}{
+        right: 31.3%;
+      }
+    }
+    &.month-09{
+      right: 25.4%;
+      @media #{$info-tablet-1399} {
+        right: 25%;
+      }
+      @media only screen and (max-width : 1199.5px){
+        right: 24.5%;
+      }
+      @media #{$info-tablet-991}{
+        right: 23.7%;
+      }
+    }
+    &.month-10{
+      right: 17.3%;
+      @media #{$info-tablet-1399} {
+        right: 17%;
+      }
+      @media only screen and (max-width : 1199.5px){
+        right: 16.6%;
+      }
+      @media #{$info-tablet-991}{
+        right: 16%;
+      }
+    }
+    &.month-11{
+      right: 9.2%;
+      @media #{$info-tablet-1399} {
+        right: 8.9%;
+      }
+      @media only screen and (max-width : 1199.5px){
+        right: 8.6%;
+      }
+      @media #{$info-tablet-991}{
+        right: 8.4%;
+      }
+    }
+    &.month-12{
+      right: 1%;
+      @media #{$info-tablet-1399} {
+        right: 0.9%;
+      }
+      @media only screen and (max-width : 1199.5px){
+        right: 0.6%;
+      }
+      @media #{$info-tablet-991}{
+        right: 0.6%;
+      }
+    }
+  }
+
+  .rm-box.rm-box2{
+    .icon-now-month.month-01{
+      animation-name: icon-now-color;
+      bottom: 53px;
+      right: 88.4%;
+      @media #{$info-tablet-1399} {
+        bottom: 46px;
+        right: 86.9%;
+      }
+      @media only screen and (max-width : 1199.5px){
+        bottom: 36px;
+        right: 85.5%;
+      }
+      @media #{$info-tablet-991}{
+        bottom: 25px;
+        right: 82.5%;
+      }
+    }
+    .icon-now-month.month-07{
+      animation-name: icon-now-color;
+      bottom: 53px;
+      right: 39.3%;
+      @media #{$info-tablet-1399} {
+        bottom: 46px;
+        right: 38.5%;
+      }
+      @media only screen and (max-width : 1199.5px){
+        bottom: 36px;
+        right: 37.8%;
+      }
+      @media #{$info-tablet-991}{
+        bottom: 25px;
+        right: 36.5%;
+      }
+    }
+  }
+
+  .rm-box.rm-box3{
+    .icon-now-month.month-02{
+      animation-name: icon-now-color;
+      bottom: 53px;
+      right: 80.2%;
+      @media #{$info-tablet-1399} {
+        bottom: 46px;
+        right: 78.8%;
+      }
+      @media only screen and (max-width : 1199.5px){
+        bottom: 36px;
+        right: 77.8%;
+      }
+      @media #{$info-tablet-991}{
+        bottom: 26px;
+        right: 74.9%;
+      }
+    }
+  }
+  /* end icon now month */
+
+  .roadmap-mobile{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    .roadmap-image{
+      width: 40px;
+    }
+    .roadmap-text-box{
+      width: calc(100% - 40px);;
+      position: relative;
+      height: 100%;
+      .roadmap-text{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        .roadmap-year{
+          color: #EBEBEB;
+          font-size: 12px;
+          display: block;
+        }
+        .content-year{
+          margin-top: 15px;
+          width: 95%;
+          color: #00E0FF;
+          position: absolute;
+          font-size: 0.62rem;
+        }
+        &.roadmap-text-1{
+          position: absolute;
+          top: 69px;
+          left: 0;
+        }
+        &.roadmap-text-2{
+          position: absolute;
+          top: 190px;
+          left: 0;
+        }
+        &.roadmap-text-3{
+          position: absolute;
+          top: 368px;
+          left: 0;
+        }
+        &.roadmap-text-4{
+          position: absolute;
+          top: 595px;
+          left: 0;
+        }
+        &.roadmap-text-5{
+          position: absolute;
+          top: 803px;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+@keyframes rotateIcon {
+  10%{
+    transform: rotateY(0);
+  }
+  25%{
+    transform: rotateY(0);
+  }
+  75%{
+    transform: rotateY(180deg);
+  }
+  100%{
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes icon-now {
+  0%{
+    bottom: 66px;
+  }
+  33.3%{
+    bottom: 60px;
+  }
+  66.6%{
+    bottom: 66px;
+  }
+  100%{
+    bottom: 60px;
+  }
+}
+
+@keyframes icon-now-1399 {
+  0%{
+    bottom: 55px;
+  }
+  33.3%{
+    bottom: 50px;
+  }
+  66.6%{
+    bottom: 55px;
+  }
+  100%{
+    bottom: 50px;
+  }
+}
+
+@keyframes icon-now-1200 {
+  0%{
+    bottom: 43px;
+  }
+  33.3%{
+    bottom: 39px;
+  }
+  66.6%{
+    bottom: 43px;
+  }
+  100%{
+    bottom: 39px;
+  }
+}
+
+@keyframes icon-now-991 {
+  0%{
+    bottom: 33px;
+  }
+  33.3%{
+    bottom: 29px;
+  }
+  66.6%{
+    bottom: 33px;
+  }
+  100%{
+    bottom: 29px;
+  }
+}
+
+@keyframes icon-now-color {
+  0%{
+    transform: rotate(45deg) translate(0 ,-7px);
+  }
+  33.3%{
+    transform: rotate(45deg) translate(0 ,0);
+  }
+  66.6%{
+    transform: rotate(45deg) translate(0 ,-7px);
+  }
+  100%{
+    transform: rotate(45deg) translate(0 ,0);
+  }
+}

@@ -1,0 +1,81 @@
+@import "src/scss/variables";
+
+.mini-games{
+  position: relative;
+  background-color: $bg-color;
+  width: 100%;
+  overflow: hidden;
+  .title-main{
+    margin-top: 3.5vw;
+    @media #{$info-phone} {
+      position: absolute;
+      top: 15vw;
+    }
+    @media #{$info-phone-330} {
+      top: 8vw;
+    }
+  }
+  .video{
+    width: 100%;
+    margin-bottom: 6vw;
+  }
+  .button-hidden-box{
+    position: absolute;
+    left: 50%;
+    top: 11vw;
+    transform: translate(-50%, 0);
+  }
+  .button{
+    cursor: pointer;
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 19vw;
+    height: 7vw;
+    span{
+      font-size: 1.6vw;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      font-weight: 600;
+      color: #FFED77;
+      text-align: center;
+      width: 19vw;
+      transform: translate(-50%, -55%);
+    }
+    &.button-jigsaw{
+      position: absolute;
+      bottom: 11vw;
+      left: 8vw;
+    }
+    &.button-quiz{
+      position: absolute;
+      bottom: 11vw;
+      right: 8vw;
+    }
+  }
+
+  .mobile-box{
+    position: relative;
+    .button-mobile{
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%,0);
+      position: absolute;
+      @media #{$info-phone-330} {
+        top: 13%;
+      }
+      .button{
+        top: 20%;
+        left: 50%;
+        width: 200px;
+        height: 70px;
+        z-index: 1;
+        span{
+          width: 90%;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

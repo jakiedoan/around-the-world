@@ -1,0 +1,32 @@
+@import "src/scss/variables";
+
+.character{
+  position: relative;
+  display: flex;
+  background-color: $bg-color;
+  width: 100%;
+  overflow: hidden;
+  @media #{$info-phone} {
+    padding-top: 25px;
+  }
+
+  .title-main{
+    position: absolute;
+    width: 100%;
+    top: 3vw;
+    @media #{$info-tablet-1399} {
+      top: 1vw;
+    }
+    @media #{$info-phone} {
+      top: 20px;
+    }
+  }
+
+  .video{
+    width: 100%;
+    margin-bottom: -2px;
+    &.hidden{
+      display: none;
+    }
+  }
+}

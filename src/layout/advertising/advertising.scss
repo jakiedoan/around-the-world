@@ -1,0 +1,53 @@
+@import "src/scss/variables";
+
+.advertising{
+  background-color: $bg-color;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  .title-main{
+    margin: 3vw 0 3vw 0;
+  }
+
+  .advertising-image{
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 54vw;
+    @media #{$info-phone} {
+      height: 56.5vw;
+    }
+
+    .title{
+      color: #FFFFFF;
+      font-size: 1.1vw;
+      position: absolute;
+      @media #{$info-phone} {
+        font-size: 1.7vw;
+      }
+    }
+
+    .title-1{
+      width: 32vw;
+      left: 3.5vw;
+      top: 37.8vw;
+      @media #{$info-phone} {
+        left: 3.5vw;
+        width: 49vw;
+        top: 39vw;
+      }
+    }
+
+    .title-2{
+      width: 21vw;
+      left: 63.6vw;
+      top: 47vw;
+      @media #{$info-phone} {
+        left: 64.7vw;
+        width: 28vw;
+        top: 48vw;
+      }
+    }
+  }
+}
