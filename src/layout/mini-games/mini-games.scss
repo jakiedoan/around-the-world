@@ -1,11 +1,11 @@
-@import "src/scss/variables";
+@import 'src/scss/variables';
 
-.mini-games{
+.mini-games {
   position: relative;
   background-color: $bg-color;
   width: 100%;
   overflow: hidden;
-  .title-main{
+  .title-main {
     margin-top: 3.5vw;
     @media #{$info-phone} {
       position: absolute;
@@ -15,63 +15,63 @@
       top: 8vw;
     }
   }
-  .video{
+  .video {
     width: 100%;
     margin-bottom: 6vw;
   }
-  .button-hidden-box{
+  .button-hidden-box {
     position: absolute;
     left: 50%;
     top: 11vw;
     transform: translate(-50%, 0);
   }
-  .button{
+  .button {
     cursor: pointer;
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
     width: 19vw;
     height: 7vw;
-    span{
+    span {
       font-size: 1.6vw;
       position: absolute;
       left: 50%;
       top: 50%;
       font-weight: 600;
-      color: #FFED77;
+      color: #ffed77;
       text-align: center;
       width: 19vw;
       transform: translate(-50%, -55%);
     }
-    &.button-jigsaw{
+    &.button-jigsaw {
       position: absolute;
       bottom: 11vw;
       left: 8vw;
     }
-    &.button-quiz{
+    &.button-quiz {
       position: absolute;
       bottom: 11vw;
       right: 8vw;
     }
   }
 
-  .mobile-box{
+  .mobile-box {
     position: relative;
-    .button-mobile{
+    .button-mobile {
       top: 20%;
       left: 50%;
-      transform: translate(-50%,0);
+      transform: translate(-50%, 0);
       position: absolute;
       @media #{$info-phone-330} {
         top: 13%;
       }
-      .button{
+      .button {
         top: 20%;
         left: 50%;
         width: 200px;
         height: 70px;
         z-index: 1;
-        span{
+        span {
           width: 90%;
           font-size: 15px;
         }
